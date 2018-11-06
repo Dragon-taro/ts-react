@@ -1,10 +1,7 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
+import Todo from "./components/Todo";
 
-class App extends React.Component {
-  render() {
-    return <div>hello world</div>;
-  }
-}
+const App: React.SFC = () => <Todo />;
 
 ReactDOM.render(<App />, document.getElementById("root"));
