@@ -6,7 +6,7 @@ interface TodoState {
 }
 
 interface ITodo {
-  // ここをTodoにするとcオンポーネントと名前が衝突する。
+  // ここをTodoにするとコンンポーネントと名前が衝突する。
   id: number;
   content: string;
 }
