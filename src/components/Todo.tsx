@@ -22,11 +22,12 @@ class Todo extends React.Component<{}, TodoState> {
   }
 
   private addTodo() {
+    const { todos, value }: TodoState = this.state;
     const todo: ITodo = {
-      id: this.state.todos.length,
-      content: this.state.value
+      id: todos.length,
+      content: value
     };
-    this.setState({ todos: this.state.todos.concat(todo), value: "" });
+    this.setState({ todos: todos.concat(todo), value: "" });
   }
 
   private todoList(): JSX.Element[] {
